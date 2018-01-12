@@ -68,4 +68,15 @@ describe('generate-url', () => {
       expect(generator.next()).toEqual(expectation)
     })
   })
+
+  describe('padNumber test', () => {
+    it('should return the correct string: 001', () => {
+      const expectation = '001'
+      const result = helper.padNumber(1)
+
+      expect(result).toEqual(expectation)
+    })
+  })
 })
+
+// Create a test to pass greater than 9
